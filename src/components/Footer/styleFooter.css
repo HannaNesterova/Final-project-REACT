@@ -1,0 +1,22 @@
+footer{
+    background-color: #333;
+    color: aliceblue;
+}
+
+.main_containerFooter{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    margin: 0px 100px;
+}
+p{
+    color: #777;
+    font-size: 12px;
+}
+.store_footer{
+    padding: 10px 0px;
+    margin: 1px 0px 0px 0px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,57 @@
+/* rgb(68, 95, 132) - header text */
+.containerHeader{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+}
+.box_header{
+    background-color: #445f84;
+    border-radius: 50%;
+    color: #fff;
+    height: 40px;
+    text-decoration: none;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 42px;
+    height: 38px;
+    background-color: white;
+    border-color: #445f84;
+    color: #445f84;
+    cursor: pointer;
+}
+header{
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+}
+.logo{
+    margin-right: auto;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.input_main{
+    border: 1px solid #ced4da;
+    width: 170px;
+    height: 30px;
+    padding: 2px 6px;
+}
+button{
+    width: 42px;
+    height: 38px;
+    background-color: white;
+    border-color: #445f84;
+    color: #445f84;
+    cursor: pointer;
+}

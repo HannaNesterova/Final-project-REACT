@@ -20,3 +20,35 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.icon-styling{
+    fill: #777;
+    stroke:  #333;
+    stroke-width: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+a .icon-styling:hover{
+    fill: #ffffff;
+}
+a{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #777;
+    height: 40px;
+    transition: all .5s ease;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a:hover{
+    border: 1px solid #777;
+}
+.a_flex{
+    display: flex;
+    gap: 15px;
+}

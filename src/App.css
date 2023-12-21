@@ -10,3 +10,32 @@ justify-content: space-between;
 height: 100vh;
 margin: 0px 100px;
 }
+
+
+
+@media all and (max-width:900px){
+  .main_containerFooter{
+    flex-wrap: wrap;
+  }
+  .app_wrapper{
+    height: fit-content;
+    margin: 0px 50px;
+  }
+  .main_containerFooter p{
+    font-size: 18px;
+  }
+}
+@media all and (max-width:560px){
+  .app_wrapper{
+    margin: 0px 25px;
+  }
+  .slide-description {
+    font-size: 30px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  .main_containerFooter{
+    justify-content: flex-start
+  }
+}

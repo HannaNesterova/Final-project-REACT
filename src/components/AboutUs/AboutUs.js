@@ -1,14 +1,25 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Header from '../Header/Header';
 import './styleAboutUs.css';
+import ContactImg from '../../img/about_us/error404.jpeg';
 
 
 function AboutUs(){
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     return(
         <div className='container'>
             <Header />
-        <div>
+        <div data-aos="fade-up" data-aos-duration="3000">
             ABOUT US
+            <img src={ContactImg} alt='img' className='error_img'/>
 
         </div>
         </div>

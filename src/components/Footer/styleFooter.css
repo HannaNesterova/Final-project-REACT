@@ -45,9 +45,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-a:hover{
-    border: 1px solid #777;
-}
+
 .a_flex{
     display: flex;
     gap: 15px;

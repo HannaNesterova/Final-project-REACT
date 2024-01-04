@@ -1,3 +1,97 @@
-.main_slider_cont{
-    margin-top: 350px;
+
+
+.container-main{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.item-container-first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+
+.pic{
+    position: relative;
+}
+.image-details{
+    position: absolute;
+    contain: '';
+    color: white;
+    font-size: 18px;
+}
+
+.picOne{
+    color: #fff;
+    right: 10%;
+    top: 33%;
+}
+.picTwo{
+    color: #000;
+    left: 10%;
+    top: 33%;
+}
+.picThree{
+    color: #fff;
+    left: 10%;
+    top: 30%;
+}
+.picFour{
+    bottom: 10%;
+    color: #fff;
+    left: 10%;
+}
+.image-details button{
+    background-color: white;
+    width: 170px;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    transition: all .5s ease;
+    margin-top: 10px;
+}
+.image-details button:hover{
+    background-color: rgba(128, 128, 128, 0.789);
+    color: white;
+}
+.m-0{
+    font-size: 16px;
+    margin: 0;
+}
+.image-details h4{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+.details-shipping{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 48px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.details h5{
+    font-size: 1.25rem;
+    color: #445f84!important;
+    font-family: Poppins,sans-serif!important;
+    margin: 0px 0px 10px 0px;
+}
+.details p{
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #445f84!important;
+    font-family: Poppins,sans-serif!important;
+}
+.details svg{
+    color: #445f84!important;
 }

@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     margin-top: 24px;
+    justify-content: space-between;
 
 }
 .box_header{
@@ -54,4 +55,9 @@ button{
     border-color: #445f84;
     color: #445f84;
     cursor: pointer;
+}
+
+.btn-number{
+    width: 150px;
+    text-decoration: none;
 }

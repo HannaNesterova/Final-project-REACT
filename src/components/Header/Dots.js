@@ -6,7 +6,7 @@ function Dots({activeIndex, onclick, imageSlider}){
             {imageSlider.map((slider, index) => 
                 <span key={index} 
                 className={`${activeIndex === index ? "dot active-dot" : "dot"}`} 
-                onclick={() => onclick(index)}>
+                onClick={() => onclick(index)}>
                 </span>
             )}
         </div>

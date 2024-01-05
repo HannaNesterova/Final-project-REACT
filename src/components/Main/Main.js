@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useState } from 'react';
+import {items} from '../Items/items'
+import ItemsPage from '../Items/ItemsPage';
+
 
 import Header from "../Header/Header";
 import Slider from "../Header/Slider";
@@ -13,6 +17,19 @@ import './styleMain.css'
 
 function Main(){
 
+  const [item, setItem] = useState(items);
+
+
+  const filterItems = (category) => {
+    if (category === 'all') {
+      setItem(items);
+    } else {
+      const itemsAreFiltered = items.filter(element => element.category === category);
+      setItem(itemsAreFiltered);
+    }
+  }
+  
+  
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -20,8 +37,9 @@ function Main(){
     
     return(
         <div>
-            <Header />
+            <Header/>
         <div className="main_slider_cont">
+
             <Slider />
             <div className="container-main " >
                 <div className="item-container-first">
@@ -108,6 +126,11 @@ function Main(){
                     </div>
                 </div>
             </div>
+        </div>
+        <div className='items-wrapper'>
+            <ItemsPage items={item} 
+            filterItems={filterItems}
+            />
         </div>
         </div>
     )

@@ -17,11 +17,31 @@
     border-radius: 10px;
     border: 1px solid  #6c6e71a5;
 }
+.top-sale{
+    display: flex;
+}
 .item-top{
     text-align: center;
     width: 50px;
     background-color: #7dd2ea;
     padding: 5px;
+}
+.item-sale{
+    margin-left: 5px;
+    text-align: center;
+    width: 50px;
+    background-color: #ef837b;
+    padding: 5px;
+    color: white;
+}
+.item-out{
+        margin-left: 5px;
+        text-align: center;
+        width: 120px;
+        background-color: #ccc;
+        padding: 5px;
+        color: rgb(0, 0, 0);
+
 }
 .item-img{
     width: 300px;
@@ -75,11 +95,10 @@
     border: none;
     color: gray;
 }
-.filterItems button:hover{
+
+.filterItems button:hover,
+.filterItems button:focus,
+.filterItems button:active {
     color: #445f84;
-    border-bottom:2px solid #445f84;
-}
-.filterItems button:active{
-    color: #445f84;
-    border-bottom:2px solid #445f84;
+    border-bottom: 2px solid #445f84;
 }

@@ -4,13 +4,14 @@
     display: flex;
     margin-top: 30px;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 100px;
 }
 .item-container-first{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
+    
 
 }
 
@@ -70,9 +71,12 @@
 }
 .details-shipping{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:inherit;
     padding-bottom: 48px;
+    gap: 40px;
+    margin: 0px 100px;
 }
 .details{
     display: flex;
@@ -94,4 +98,8 @@
 }
 .details svg{
     color: #445f84!important;
+}
+
+.app-wrapper .items-wrapper{
+    width: 100%;
 }

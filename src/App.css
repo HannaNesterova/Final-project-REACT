@@ -3,12 +3,12 @@ body{
   font-size: 14px ;
 
 }
-.app_wrapper{
+/* .app_wrapper{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 margin: 0px 100px;
-}
+} */
 
 
 @media all and (max-width:900px){

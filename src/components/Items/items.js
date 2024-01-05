@@ -18,115 +18,123 @@ import img16 from '../../img/foots/16.jpg';
 export const items = [
     {
         id:1,
-        category:'Women Boots',
+        category:'Men',
         title:'Designer',
         price: 50,
-        img:img1
+        img:img1,
+        spanSale:'Sale'
     },
     {
         id:2,
-        category:'Women Boots',
+        category:'Women',
         title:'Instant Flex',
         price: 165,
-        img:img2
+        img:img2,
+        spanOut:'Out of Stock'
     },
     {
         id:3,
-        category:'Women Boots',
+        category:'Men',
         title:'Barefoot Shoe Company',
         price: 55,
-        img:img3
+        img:img3,
+        spanSale: 'Sale'
     },
     {
         id:4,
-        category:'Sneakers, Men',
+        category:'Men',
         title:'Casual Shoes',
         price: 55,
         img:img4
     },
     {
         id:5,
-        category:'Women Sneakers',
+        category:'Women',
         title:'Fitsixes',
         price: 65,
         img:img5
     },
     {
         id:6,
-        category:'Men Boots',
+        category:'Men',
         title:'Crucial Footwear',
         price: 25,
-        img:img6
+        img:img6,
+        span: 'Out of Stock'
     },
     {
         id:7,
-        category:'Men Boots',
+        category:'Women',
         title:'The South Face',
         price: 45,
         img:img7
     },
     {
         id:8,
-        category:'Women Boots',
+        category:'Men',
         title:'Custom Sole Fitter',
         price: 65,
-        img:img8
+        img:img8,
+        spanOut:'Out of Stock'
     },
     {
         id:10,
-        category:'Women Boots',
+        category:'Men',
         title:'Fit Any Foot',
         price: 50,
         img:img10
     },
     {
         id:9,
-        category:'Men Boots',
+        category:'Men',
         title:'The North Face',
         price: 35,
         img:img9
     },
     {
         id:11,
-        category:'Women Boots',
+        category:'Women',
         title:'All Star Footwear',
         price: 75,
         img:img11
     },
     {
         id:12,
-        category:'Women Boots',
+        category:'Women',
         title:'Galaxy Surfer Slippers',
         price: 45,
         img:img12
     },
     {
         id:13,
-        category:'Women Boots',
+        category:'Women',
         title:'Galaxy Surfer Slippers',
         price: 45,
-        img:img13
+        img:img13,
+        spanSale: 'Sale'
     },
     {
         id:14,
-        category:'Men Boots',
+        category:'Men',
         title:'Ikon Shoes',
         price: 75,
-        img:img14
+        img:img14,
+        spanOut:'Out of Stock'
     },
     {
         id:15,
-        category:'Men Boots',
+        category:'Women',
         title:'Adap Shoe',
         price: 45,
         img:img15
     },
     {
         id:16,
-        category:'Men Boots',
+        category:'Men',
         title:'Booties Shoes',
         price: 55,
-        img:img16
+        img:img16,
+        spanOut:'Out of Stock'
     },
 ]
 

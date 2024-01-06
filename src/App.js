@@ -16,7 +16,6 @@ function App() {
     <div className="app_wrapper">
       <ContactHeader />
     </div>
-
       <Footer />
     </div>
   );

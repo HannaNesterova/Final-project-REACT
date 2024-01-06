@@ -20,7 +20,7 @@ function ItemsPage({items,filterItems}){
          <div className='back-items'>
    
            <Buttons filterItems={filterItems} />
-           {loader && <LoaderPage />}
+            {/* {loader && <LoaderPage />}  */}
 
            <div className="all-items">
              {items ? (

@@ -13,12 +13,11 @@ import secondPic from '../../img/main_page_img/02.jpeg';
 import thirdPic from '../../img/main_page_img/03.jpeg';
 import foughtPic from '../../img/main_page_img/04.jpeg';
 import './styleMain.css'
-import LoaderPage from '../Loader/LoaderPage';
-
 
 function Main(){
 
   const [item, setItem] = useState(items);
+  console.log(item)
 
   useEffect(() => {
     AOS.init();
@@ -38,7 +37,9 @@ function Main(){
 
     return(
         <div>
-            <Header/>
+            <Header items={item}
+            setItem={setItem} />
+
         <div className="main_slider_cont">
 
             <Slider />

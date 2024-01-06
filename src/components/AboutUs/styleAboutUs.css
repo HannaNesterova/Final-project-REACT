@@ -19,3 +19,8 @@
     padding: 50px 0px;
     margin: 0;
 }
+.title-about{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}

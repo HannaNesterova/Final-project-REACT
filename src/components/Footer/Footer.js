@@ -48,7 +48,7 @@ function Footer(){
             </div>
             </div>
         </footer>
-        <p className='store_footer'>Copyright © 2024 "1-2-SHOE" Store. All Rights Reserved</p>
+        <p className='store_footer'>Nesterova Hanna © 2024 "1-2-SHOE" Store. All Rights Reserved</p>
         </div>
 
     )

@@ -13,12 +13,17 @@ import secondPic from '../../img/main_page_img/02.jpeg';
 import thirdPic from '../../img/main_page_img/03.jpeg';
 import foughtPic from '../../img/main_page_img/04.jpeg';
 import './styleMain.css'
+import LoaderPage from '../Loader/LoaderPage';
 
 
 function Main(){
 
   const [item, setItem] = useState(items);
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   const filterItems = (category) => {
     if (category === 'all') {
@@ -28,13 +33,9 @@ function Main(){
       setItem(itemsAreFiltered);
     }
   }
-  
-  
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-      }, []);
-    
+
+
+
     return(
         <div>
             <Header/>

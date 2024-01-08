@@ -62,3 +62,12 @@ button{
     width: 150px;
     text-decoration: none;
 }
+
+
+@media all and (max-width: 825px) {
+.containerHeader{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+}

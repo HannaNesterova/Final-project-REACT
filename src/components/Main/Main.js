@@ -14,10 +14,14 @@ import thirdPic from '../../img/main_page_img/03.jpeg';
 import foughtPic from '../../img/main_page_img/04.jpeg';
 import './styleMain.css'
 
-function Main(){
+function Main({filteredItems,
+    valueOfItem,
+    setValueOfItem,
+    button,
+    setButton,
+    setFilteredItems}){
 
   const [item, setItem] = useState(items);
-  console.log(item)
 
   useEffect(() => {
     AOS.init();
@@ -33,12 +37,15 @@ function Main(){
     }
   }
 
-
-
     return(
         <div>
             <Header items={item}
-            setItem={setItem} />
+            valueOfItem={valueOfItem}
+            setValueOfItem={setValueOfItem}
+            button={button}
+            setButton={setButton}
+            filteredItems={filteredItems}
+            setFilteredItems={setFilteredItems}/>
 
         <div className="main_slider_cont">
 
@@ -132,6 +139,8 @@ function Main(){
         <div className='items-wrapper'>
             <ItemsPage items={item} 
             filterItems={filterItems}
+            filteredItems={filteredItems}
+            
             />
         </div>
         </div>

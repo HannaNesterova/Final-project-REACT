@@ -108,7 +108,7 @@
       .burger-menu.open .header_contact{
       top: 0;
       left: 0;
-      padding-left: 30px;
+      padding:70px 0px 0px 30px;
     }
     .burger-menu .header_contact {
       left: 0;

@@ -31,7 +31,7 @@ header{
     justify-content: space-between;
 }
 .logo{
-    margin-right: auto;
+    z-index: 200;
 }
 
 form{

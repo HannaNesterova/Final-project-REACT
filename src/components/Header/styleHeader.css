@@ -4,8 +4,6 @@
     align-items: center;
     margin-top: 24px;
     justify-content: space-between;
-    margin: 0px 100px;
-
 }
 .box_header{
     background-color: #445f84;
@@ -67,7 +65,21 @@ button{
 @media all and (max-width: 825px) {
 .containerHeader{
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
     margin-top: 20px;
+    background-image: url(../../img/header/logo2.jpeg);
+    background-position: left;
+    background-repeat: no-repeat;
+    top: 0;
+    background-size: 100px;
+    height: 200px;
+  }
+  form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 }

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,16 +11,10 @@ import Login from '../Login/Login';
 import ContactUs from "../ContactUs/ContactUs";
 import Main from "../Main/Main";
 import logo from '../../img/header/logo2.jpeg';
-import { useState } from "react";
 
 
 
-function ContactHeader({filteredItems,
-    valueOfItem,
-    setValueOfItem,
-    button,
-    setButton,
-    setFilteredItems }){
+function ContactHeader(){
 
     const [ isMenuOpen, setMenuOpen] = useState(false);
 
@@ -46,13 +41,7 @@ function ContactHeader({filteredItems,
         </nav>
         </div>
         <Routes>
-            <Route path="/" element={<Main filteredItems={filteredItems}
-            valueOfItem={valueOfItem}
-            setValueOfItem={setValueOfItem}
-            button={button}
-            setButton={setButton}
-            setFilteredItems={setFilteredItems}
-            />} />
+            <Route path="/" element={<Main/>} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/login" element={<Login />} />

@@ -1,101 +1,118 @@
-
-.header_contact{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 1px solid rgba(7, 7, 7, 0.1);
-    text-transform: uppercase;
-    align-items: flex-end;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.781);
-    transition: all 3s ease ;
+.burger-menu{
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
+.container{
+  max-width: 900px;
+}
+.header_contact{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(7, 7, 7, 0.1);
+  text-transform: uppercase;
+  align-items: flex-end;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.781);
+  transition: all 3s ease ;
+  width: 100%;
+}
+
 .header_contact a{
-   margin: 14px;
-   color: rgb(68, 95, 132);
-   text-decoration: none;
-   font-weight: 500;
-   width: 130px;
-   border: none;
+ margin: 14px;
+ color: rgb(68, 95, 132);
+ text-decoration: none;
+ font-weight: 500;
+ width: 130px;
+ border: none;
 }
 .header_contact a:hover{
-    border: none;
+  border: none;
 }
 
 @media all and (max-width: 970px){
-  .item-container-second{
-    display: none;
+.item-container-second{
+  display: none;
+}
+}
+
+@media all and (max-width: 825px) {
+  .burger-menu {
+      z-index: 102; 
+    }
+
+  .header_contact {
+    position: absolute;
+    top: -600px;
+    flex-direction: column;
+    align-items: stretch;
+    transition: all 1s ease ;
+    width: 100%;
+    max-width: 825px;
+    background-color: #eee;
+    position: fixed;
+  }
+
+  .burger-icon {
+      cursor: pointer;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 101;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      border: 1px solid rgb(68, 95, 132);
+      padding: 3px;
+      border-radius: 5px;
+    }
+    .burger-icon span {
+      background-color: rgb(68, 95, 132);
+      height: 2px;
+      width: 25px;
+      margin: 3px 0;
+      transition: 0.4s;
+    }
+    .burger-menu.open .burger-icon span:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .burger-menu.open .burger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger-menu.open .burger-icon span:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }      
+
+      .burger-menu.open .header_contact{
+      top: 0;
+      left: 0;
+      padding-left: 30px;
+    }
+    .burger-menu .header_contact {
+      left: 0;
+    }
+
+    .container-main{
+      flex-direction: column;
+      max-width: 800px;
+      width: 100%;
+    }
+    .details-shipping{
+      margin: 0px 60px;
+    }
+    .item-container-first {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-content: flex-end;
+      align-items: center;
   }
 }
 
 
-@media all and (max-width: 825px) {
-    .burger-menu {
-        z-index: 102; 
-      }
-  
-    .header_contact {
-      position: absolute;
-      top: -300px;
-      flex-direction: column;
-      align-items: stretch;
-      transition: all 1s ease ;
-      width: 100%;
-      max-width: 756px;
-      background-color: white;
-      position: fixed;
-    }
-
-    .burger-icon {
-        cursor: pointer;
-        display: flex;
-        width: 30px;
-        height: 30px;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 101;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-      }
-      .burger-icon span {
-        background-color: rgb(68, 95, 132);
-        height: 4px;
-        width: 30px;
-        margin: 2px 0;
-        transition: 0.4s;
-      }
-      .burger-menu.open .burger-icon span:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-      }
-      
-      .burger-menu.open .burger-icon span:nth-child(2) {
-        opacity: 0;
-      }
-      
-      .burger-menu.open .burger-icon span:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-      }      
-
-        .burger-menu.open .header_contact{
-        top: 0;
-      }
-
-      .container-main{
-        flex-direction: column;
-      }
-      .details-shipping{
-        margin: 0px 60px;
-      }
-      .item-container-first {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        flex-direction: column;
-        align-content: flex-end;
-        align-items: center;
-    }
-  }

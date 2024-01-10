@@ -50,3 +50,14 @@ a{
     display: flex;
     gap: 15px;
 }
+
+@media all and (max-width:650px){
+    .main_containerFooter{
+        margin: 0px 25px;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .a_flex{
+        margin-bottom: 20px;
+    }
+}

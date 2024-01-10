@@ -14,14 +14,10 @@ import thirdPic from '../../img/main_page_img/03.jpeg';
 import foughtPic from '../../img/main_page_img/04.jpeg';
 import './styleMain.css'
 
-function Main({filteredItems,
-    valueOfItem,
-    setValueOfItem,
-    button,
-    setButton,
-    setFilteredItems}){
+function Main(){
 
   const [item, setItem] = useState(items);
+  console.log(item)
 
   useEffect(() => {
     AOS.init();
@@ -37,15 +33,12 @@ function Main({filteredItems,
     }
   }
 
+
+
     return(
         <div>
             <Header items={item}
-            valueOfItem={valueOfItem}
-            setValueOfItem={setValueOfItem}
-            button={button}
-            setButton={setButton}
-            filteredItems={filteredItems}
-            setFilteredItems={setFilteredItems}/>
+            setItem={setItem} />
 
         <div className="main_slider_cont">
 
@@ -53,7 +46,7 @@ function Main({filteredItems,
             <div className="container-main " >
                 <div className="item-container-first">
                     <div className='pic'>
-                        <img  src={firstPic} alt='foot' width={380} height={250}/>
+                        <img  src={firstPic} alt='foot' className='pic-foot-small'/>
                         <div className="image-details picOne">
                             <h3 className='m-0'>New Arrivals</h3>
                             <h4>Sneakers & <br />Athletic Shoes</h4>
@@ -61,7 +54,7 @@ function Main({filteredItems,
                         </div>
                     </div>
                     <div className='pic'>
-                        <img  src={secondPic} alt='foot' width={380} height={250}/>
+                        <img  src={secondPic} alt='foot' className='pic-foot-small'/>
                         <div className="image-details picTwo">
                             <h3 className='m-0'>Clearance</h3>
                             <h4>Heels  up <br />to 70% off</h4>
@@ -69,7 +62,7 @@ function Main({filteredItems,
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="3000" className='pic'>
-                        <img  src={thirdPic} alt='foot' width={800} height={373}/>
+                        <img  src={thirdPic} alt='foot' className='main-pic-foot'/>
                         <div className="image-details picThree">
                             <h3 className='m-0'>On Sale</h3>
                             <h4>Athletic Shoes up <br />to 30% off</h4>
@@ -80,7 +73,7 @@ function Main({filteredItems,
            
                 <div className="item-container-second">
                     <div className='pic'>
-                        <img src={foughtPic} alt='foot' width={380} height={650}/>
+                        <img src={foughtPic} alt='foot' width={380} height={650} className='second-pic-foot'/>
                         <div className="image-details picFour">
                             <h3 className='m-0'>On Sale</h3>
                             <h4>Amazing Lace  <br />Up Boots from  <br /> $39</h4>
@@ -139,8 +132,6 @@ function Main({filteredItems,
         <div className='items-wrapper'>
             <ItemsPage items={item} 
             filterItems={filterItems}
-            filteredItems={filteredItems}
-            
             />
         </div>
         </div>

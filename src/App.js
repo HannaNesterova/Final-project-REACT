@@ -31,10 +31,9 @@ function App() {
       setButton={setButton}
       filteredItems={filteredItems}
       setFilteredItems={setFilteredItems}
-
-
       />
     </div>
+
       <Footer />
     </div>
   );

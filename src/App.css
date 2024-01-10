@@ -3,12 +3,13 @@ body{
   font-size: 14px ;
 
 }
-/* .app_wrapper{
+.app_wrapper{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-margin: 0px 100px;
-} */
+margin: 0px 30px;
+position: relative;
+} 
 
 
 @media all and (max-width:900px){
@@ -25,7 +26,7 @@ margin: 0px 100px;
 }
 @media all and (max-width:560px){
   .app_wrapper{
-    margin: 0px 25px;
+    margin: 0px 5px;
   }
   .slide-description {
     font-size: 30px;

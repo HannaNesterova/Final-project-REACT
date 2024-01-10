@@ -17,7 +17,7 @@ function Slider(props){
             setActiveIndex(activeIndex === len ? 0 : activeIndex +1);
         }, 4000);
         return () => clearInterval(interval)
-    },[activeIndex]);
+    },[activeIndex, len]);
 
     return(
         <div className="slider-container">

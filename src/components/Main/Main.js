@@ -17,7 +17,6 @@ import './styleMain.css'
 function Main(){
 
   const [item, setItem] = useState(items);
-  console.log(item)
 
   useEffect(() => {
     AOS.init();

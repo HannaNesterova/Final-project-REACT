@@ -136,8 +136,11 @@
 }
 
 @media all and (max-width: 1180px){
+    .container, .container-md, .container-sm{
+        max-width: 945px;
+    }
     .pic-foot-small {
-        width: 232px;
+        width: 330px;;
         height: 203px;
     }
     .container-main{
@@ -158,7 +161,30 @@
         margin: 20px 40px;
     }
     .pic-foot-small {
-        width: 440px;
-        height: 300px;
+        width: 100%;
+        max-width: 320px;
+        height: 224px;
+    }
+}
+
+@media all and (max-width:770px){
+
+    .pic-foot-small {
+        width: 100%;
+        max-width: 260px;
+        height: 200px;
+    }
+    .image-details button{
+        font-size: 14px;
+        width: 150px;
+    }
+    .image-details h4{
+        font-size: 16px;
+    }
+    .details-shipping .details h5{
+        font-size: 14px;
+    }
+    .main_containerFooter div{
+        margin-bottom: 10px;
     }
 }

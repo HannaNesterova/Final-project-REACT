@@ -23,16 +23,6 @@ function Main(){
     AOS.refresh();
   }, []);
 
-    
-//   const filterItems = (category) => {
-//     if (category === 'all') {
-//         setFilteredItems(items);
-//     } else {
-//       const itemsAreFiltered = items.filter(element => element.category === category);
-//       setFilteredItems(itemsAreFiltered);
-//     }
-//   }
-
     return(
         <div>
             <Header 

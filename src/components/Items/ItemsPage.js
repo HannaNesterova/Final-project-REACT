@@ -10,7 +10,6 @@ function ItemsPage({items, setFilteredItems }) {
     <div className='back-items'>
 
       <Buttons
-        //items={items}
         setFilteredItems={setFilteredItems}
       />
 

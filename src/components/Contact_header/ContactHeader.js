@@ -14,6 +14,7 @@ import logo from '../../img/header/logo2.jpeg';
 
 
 
+
 function ContactHeader(){
 
     const [ isMenuOpen, setMenuOpen] = useState(false);
@@ -22,23 +23,30 @@ function ContactHeader(){
         setMenuOpen((isMenuOpen) => !isMenuOpen);
     }
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    }
+
   
     return(
         <div className="container">
-        <Router>
+        <Router> 
+   
             <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`}>
-            <div className="burger-icon" onClick={toggleMenu}>
+            <div  id="menuToggle" className="burger-icon" onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
           </div>
+          
+          <Link to='/'>
+                    <img src={logo} className="logo" alt="logo" width='110px'/>
+            </Link>
+
         <nav className='header_contact'>
-                <Link to='/'>
-                    <img src={logo} className="logo" alt="logo" width='110px' />
-                </Link>
-                <Link to='/about'>about us</Link>
-                <Link to='/contact'>contact us</Link>
-                <Link to='/login'>Login</Link>
+                <Link to='/about' onClick={closeMenu}>about us</Link>
+                <Link to='/contact' onClick={closeMenu}>contact us</Link>
+                <Link to='/login' onClick={closeMenu}>Login</Link>
         </nav>
         </div>
         <Routes>

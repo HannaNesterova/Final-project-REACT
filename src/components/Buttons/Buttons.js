@@ -1,6 +1,17 @@
+import { items } from "../Items/items";
 
+function Buttons ({ setFilteredItems}){
 
-function Buttons ({filterItems}){
+  
+    const filterItems = (category) => {
+        if (category === 'all') {
+            setFilteredItems(items);
+        } else  {
+          const itemsAreFiltered = items.filter(element => element.category === category);
+          setFilteredItems(itemsAreFiltered);
+        }
+      }
+
 
     return(
         <div>
@@ -10,6 +21,7 @@ function Buttons ({filterItems}){
           <button onClick={() => filterItems('Women')}>WOMEN</button>
           <button onClick={() => filterItems('Men')}>MEN</button>
       </div>
+      
         </div>
     )
 }

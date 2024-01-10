@@ -4,25 +4,23 @@ import { items } from '../Items/items';
 
 
 
-function Header(){
+function Header({setFilteredItems}){
 
     const [valueOfItem, setValueOfItem] = useState('');
-     console.log(valueOfItem)
-
-     const [wordSubmitted, setWordSubmitted] = useState('');
-     
-     const [filteredItems , setFilteredItems] = useState(items); 
-     console.log(filteredItems)
+     const [button, setButton] = useState(false);
 
      useEffect(() =>{
+        if(button){
         setFilteredItems(items.filter(element => {
             return element.title.toLocaleLowerCase().includes(valueOfItem.toLocaleLowerCase());
         }))
-     }, [wordSubmitted, valueOfItem])
+        setButton(false)
+    }
+     }, [button, valueOfItem, setFilteredItems]);
 
-    const finalSearch = (e) =>{
+    const finalSearch = (e) => {
         e.preventDefault();
-        setWordSubmitted(valueOfItem);
+        setButton(true);
     }
 
     return(

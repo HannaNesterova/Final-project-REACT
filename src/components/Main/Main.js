@@ -16,28 +16,27 @@ import './styleMain.css'
 
 function Main(){
 
-  const [item, setItem] = useState(items);
+  const [filteredItems, setFilteredItems] = useState(items);
 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
-  const filterItems = (category) => {
-    if (category === 'all') {
-      setItem(items);
-    } else {
-      const itemsAreFiltered = items.filter(element => element.category === category);
-      setItem(itemsAreFiltered);
-    }
-  }
-
-
+    
+//   const filterItems = (category) => {
+//     if (category === 'all') {
+//         setFilteredItems(items);
+//     } else {
+//       const itemsAreFiltered = items.filter(element => element.category === category);
+//       setFilteredItems(itemsAreFiltered);
+//     }
+//   }
 
     return(
         <div>
-            <Header items={item}
-            setItem={setItem} />
+            <Header 
+            setFilteredItems={setFilteredItems} />
 
         <div className="main_slider_cont">
 
@@ -129,8 +128,10 @@ function Main(){
             </div>
         </div>
         <div className='items-wrapper'>
-            <ItemsPage items={item} 
-            filterItems={filterItems}
+            <ItemsPage
+            items={filteredItems} 
+            filteredItems={filteredItems}
+            setFilteredItems={setFilteredItems}
             />
         </div>
         </div>

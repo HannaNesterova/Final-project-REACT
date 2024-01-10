@@ -32,6 +32,7 @@ function ContactUs(){
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Google Map"
+                        className='map'
                     ></iframe>
                     </div>
                 </div>

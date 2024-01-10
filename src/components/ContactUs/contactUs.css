@@ -10,3 +10,9 @@
 .contactUs-col{
     text-align: center;
 }
+
+@media all and (max-width:450px){
+    .map{
+        width: 300px;
+    }
+}

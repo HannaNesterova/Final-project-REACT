@@ -50,7 +50,7 @@
 
 @media all and (max-width: 825px) {
   .logo{
-    top: 24px;
+    top: 70px;
   }
   .burger-menu {
       z-index: 102; 

@@ -1,0 +1,12 @@
+.contactUs-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.contactUs-col{
+    text-align: center;
+}

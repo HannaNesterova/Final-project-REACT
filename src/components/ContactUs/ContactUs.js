@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from "../Header/Header";
 import '../ContactUs/contactUs.css'
@@ -7,10 +5,6 @@ import '../ContactUs/contactUs.css'
 
 function ContactUs(){
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-      }, []);
 
     return(
         <div>
@@ -22,7 +16,7 @@ function ContactUs(){
                         <p>+48 888 88 88</p>
                         <p>09:00 do 21:00</p>
                     </div>
-            <div data-aos="fade-up" data-aos-duration="2000">
+            <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160255.06646065976!2d16.826712921913952!3d51.127177086462474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1sen!2spl!4v1704923829523!5m2!1sen!2spl"
                         width="400"

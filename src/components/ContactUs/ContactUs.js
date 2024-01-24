@@ -7,8 +7,6 @@ function ContactUs(){
 
 
     return(
-        <div>
-            <Header />
             <div className='contactUs-cont'>
             <div className='contactUs-col'>
                         <h4>Wrocław</h4>
@@ -26,11 +24,11 @@ function ContactUs(){
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Google Map"
-                        className='map'
-                    ></iframe>
+                        className='map'>
+                    </iframe>
                     </div>
                 </div>
-        </div>
+
     )
 }
 

@@ -8,9 +8,6 @@ import './styleLogin.css';
 function Login(){
     return(
         <div className='container'>
-            <div>
-                <Header />
-            </div>
                 <h2 className='login-title'>Sign up</h2>
             <div className='container-login'>
             <Form className='form-login'>

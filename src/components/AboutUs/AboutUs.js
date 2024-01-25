@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Header from '../Header/Header';
 import './styleAboutUs.css';
 import ContactImg from '../../img/about_us/aboutUs.webp';
 import Accordion from 'react-bootstrap/Accordion';

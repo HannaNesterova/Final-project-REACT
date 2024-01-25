@@ -1,5 +1,4 @@
 import 'aos/dist/aos.css';
-import Header from "../Header/Header";
 import '../ContactUs/contactUs.css'
 
 

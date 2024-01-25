@@ -1,7 +1,5 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
-import Header from '../Header/Header';
 import './styleLogin.css';
 
 

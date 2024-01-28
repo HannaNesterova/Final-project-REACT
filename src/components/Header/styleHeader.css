@@ -37,7 +37,7 @@ header{
 form{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     gap: 10px;
 }
 

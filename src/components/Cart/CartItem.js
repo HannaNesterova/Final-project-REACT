@@ -15,7 +15,7 @@ function CartItem({product}){
 
 
     console.log('item.price:', item.price);
-    console.log('product.quantity:', item.quantity);
+    console.log('product.quantity:', product.quantity);
     
     return(
         <div className="first-cart-box">

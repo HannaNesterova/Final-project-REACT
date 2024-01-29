@@ -1,10 +1,15 @@
 
+import { useDispatch } from 'react-redux';
+import { addItemToCart } from '../../redux/cartSlice';
 import Buttons from '../Buttons/Buttons';
 import './items.css';
+import { useState } from 'react';
 
 
 
 function ItemsPage({items, setFilteredItems }) {
+const [ quantity, setQuantity] = useState(1);
+const dispatch = useDispatch();
 
   return (
     <div className='back-items'>
@@ -27,7 +32,7 @@ function ItemsPage({items, setFilteredItems }) {
                       <p className="item-category">{category}</p>
                       <p className="item-title">{title}</p>
                       <p className="item-price"> $ {price}</p>
-                      <button className="item-btn">WANT THIS</button>
+                      <button onClick={() => {dispatch(addItemToCart({item, quantity}))}} className="item-btn">WANT THIS</button>
                     </div>
                   )
                 })

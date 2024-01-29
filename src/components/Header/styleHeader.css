@@ -64,7 +64,7 @@ button{
 
 @media all and (max-width: 825px) {
     .containerHeader{
-        margin-top: 90px;
+        margin-top: 50px;
       }
   form {
     display: flex;
@@ -73,14 +73,21 @@ button{
     gap: 10px;
     flex-wrap: wrap;
   }
+  .burger-menu.open .header_contact{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media all and (max-width: 550px){
-    .containerHeader{
-        flex-direction: column;
-        align-items: flex-end;
-    }
     .input_main{
         width: 130px;
+    }
+    .input_main{
+        display: none;
+    }
+    .header_presentation button{
+        display: none;
     }
 }

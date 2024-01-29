@@ -6,14 +6,12 @@
   position: sticky;
   top: -50px;
   z-index: 100; 
-  /* background-color: white; */
 }
 .containerHeader{
   display: none;
 }
 .container{
   max-width: 900px;
-
 }
 
 
@@ -23,7 +21,7 @@
   align-items: center;
   padding: 40px 5px 5px 5px; 
   border-bottom: 1px solid rgba(7, 7, 7, 0.1);
-  background-color:#eeeeee6e ;
+  background-color:white;
 }
 
 .logo-container{
@@ -62,6 +60,9 @@
  font-weight: 500;
  width: 130px;
  border: none;
+ display: flex;
+ gap: 20px;
+ align-items: baseline;
 }
 .header_contact a:hover{
   border: none;
@@ -85,8 +86,8 @@
   }
   .burger-menu {
       z-index: 102; 
-      position: fixed;
-      /* background-color: white; */
+      position:absolute;
+      background-color: white; 
     }
 
   .header_contact {
@@ -159,6 +160,10 @@
       gap: 30px;
       align-content: flex-end;
       align-items: center;
+  }
+  .logo-container img {
+    width: 100px;
+    height: 80px;
   }
 
 }

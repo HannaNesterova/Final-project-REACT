@@ -1,9 +1,10 @@
 
 import { useDispatch } from 'react-redux';
 import { addItemToCart } from '../../redux/cartSlice';
+import { useState } from 'react';
 import Buttons from '../Buttons/Buttons';
 import './items.css';
-import { useState } from 'react';
+
 
 
 
@@ -11,12 +12,13 @@ function ItemsPage({items, setFilteredItems }) {
 const [ quantity, setQuantity] = useState(1);
 const dispatch = useDispatch();
 
+const handleAddToCart = (item) => {
+  dispatch(addItemToCart({ item, quantity }));
+};
+
   return (
     <div className='back-items'>
-
-      <Buttons
-        setFilteredItems={setFilteredItems}
-      />
+      <Buttons setFilteredItems={setFilteredItems}/>
 
       <div className="all-items">
         {items.map(item => {
@@ -32,7 +34,7 @@ const dispatch = useDispatch();
                       <p className="item-category">{category}</p>
                       <p className="item-title">{title}</p>
                       <p className="item-price"> $ {price}</p>
-                      <button onClick={() => {dispatch(addItemToCart({item, quantity}))}} className="item-btn">WANT THIS</button>
+                      <button onClick={() => handleAddToCart(item)}  className="item-btn">WANT THIS</button>
                     </div>
                   )
                 })

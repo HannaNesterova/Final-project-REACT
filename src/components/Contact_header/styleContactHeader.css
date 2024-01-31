@@ -162,8 +162,9 @@
       align-items: center;
   }
   .logo-container img {
-    width: 100px;
-    height: 80px;
+      width: 77px;
+      height: 48px;
+      margin-top: 35px;
   }
 
 }
@@ -172,5 +173,8 @@
 @media all and (max-width:420px){
   .containerHeader {
     align-content: space-between;
+  }
+  .logo-container img {
+    margin-top: 20px;
   }
 }

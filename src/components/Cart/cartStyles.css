@@ -67,6 +67,9 @@
     text-align: center;
     padding-bottom: 20px;
 }
+.empty-cart{
+    font-size: 30px;
+}
 
 @media all and (max-width: 970px){
     .first-cart-box {

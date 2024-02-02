@@ -1,12 +1,10 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ChangeQuantity from './ChangeQuantity';
 import './cartStyles.css'
 import { items } from "../Items/items";
 import { removeItemFromCart } from "../../redux/cartSlice";
 
 function CartItem({product}){
-    const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
     const item = items.find(item => item.id === product.itemId);
 
@@ -14,6 +12,10 @@ function CartItem({product}){
    const handleRemoveItem = () => {
         dispatch(removeItemFromCart({ cartItemId: product.itemId }));
     };
+    const quantity = useSelector(state => {
+        const cartItem = state.cart.cartItems.find(item => item.itemId === product.itemId);
+        return cartItem ? cartItem.quantity : 1;
+    });
     return(
         <div className="first-cart-box">
             <div>
@@ -27,7 +29,7 @@ function CartItem({product}){
 
             </div>
             <div>
-                <ChangeQuantity quantity={quantity} setQuantityInCartItem={setQuantity} />
+            <ChangeQuantity cartItemId={product.itemId} />
             </div> 
             <div>
                 <h6>Total</h6>

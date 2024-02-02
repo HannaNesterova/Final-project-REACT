@@ -7,7 +7,6 @@ import { getCartItems, getTotalPrice } from "../../redux/cartSlice";
 const Cart = () => {
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
-    console.log(totalPrice);
 
     return (
         <div>
@@ -24,7 +23,7 @@ const Cart = () => {
 
                 <div className="second-cart-box">
                     <p>Cart Total:</p>
-                    <h3>Total price: $ {totalPrice }</h3>
+                    <h3>Total price: $ {totalPrice}</h3>
                     <button>Proceed to checkout</button>
                 </div>
             </div>

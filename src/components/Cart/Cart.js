@@ -2,12 +2,9 @@ import CartItem from "./CartItem";
 import './cartStyles.css'
 import { useSelector } from "react-redux";
 import { getCartItems, getTotalPrice } from "../../redux/cartSlice";
-import { useState } from "react";
-
 
 
 const Cart = () => {
-    const [quantity, setQuantity] = useState(1);
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
     console.log(totalPrice);
@@ -27,7 +24,7 @@ const Cart = () => {
 
                 <div className="second-cart-box">
                     <p>Cart Total:</p>
-                    <h3>Total price: $ {totalPrice * quantity}</h3>
+                    <h3>Total price: $ {totalPrice }</h3>
                     <button>Proceed to checkout</button>
                 </div>
             </div>

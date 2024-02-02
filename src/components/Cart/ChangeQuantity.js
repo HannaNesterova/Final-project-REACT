@@ -2,6 +2,7 @@
 
 
 function ChangeQuantity({ quantity, setQuantityInCartItem }) {
+    
     const addQuantity = () => {
       const newQuantity = quantity + 1;
       setQuantityInCartItem(newQuantity);

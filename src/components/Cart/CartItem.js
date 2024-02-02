@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import ChangeQuantity from './ChangeQuantity';
 import './cartStyles.css'
 import { items } from "../Items/items";
-import { useDispatch } from "react-redux";
 import { removeItemFromCart } from "../../redux/cartSlice";
 
 function CartItem({product}){
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
     const item = items.find(item => item.id === product.itemId);
+
 
    const handleRemoveItem = () => {
         dispatch(removeItemFromCart({ cartItemId: product.itemId }));

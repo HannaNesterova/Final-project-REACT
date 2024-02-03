@@ -9,7 +9,7 @@ import './items.css';
 
 
 function ItemsPage({items, setFilteredItems }) {
-const [ quantity, setQuantity] = useState(1);
+const [ quantity ] = useState(1);
 const dispatch = useDispatch();
 const handleAddToCart = (item) => {
   dispatch(addItemToCart({ item, quantity }));

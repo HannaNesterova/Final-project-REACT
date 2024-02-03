@@ -7,7 +7,6 @@ export const cartSlice = createSlice({
     },
     reducers:{
         addItemToCart:(state, action) => {
-            
             state.cartItems.push({
                 itemId: action.payload.item.id,
                 quantity: action. payload.quantity,

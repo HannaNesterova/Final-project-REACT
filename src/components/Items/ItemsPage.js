@@ -11,7 +11,6 @@ import './items.css';
 function ItemsPage({items, setFilteredItems }) {
 const [ quantity, setQuantity] = useState(1);
 const dispatch = useDispatch();
-
 const handleAddToCart = (item) => {
   dispatch(addItemToCart({ item, quantity }));
 };
@@ -19,7 +18,6 @@ const handleAddToCart = (item) => {
   return (
     <div className='back-items'>
       <Buttons setFilteredItems={setFilteredItems}/>
-
       <div className="all-items">
         {items.map(item => {
                   const { id, category, title, price, img, spanSale, spanOut } = item;

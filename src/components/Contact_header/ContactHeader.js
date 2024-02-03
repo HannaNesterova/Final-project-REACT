@@ -16,9 +16,6 @@ import Main from "../Main/Main";
 import Cart from "../Cart/Cart";
 import logo from '../../img/header/logo2.jpeg';
 
-
-
-
 function ContactHeader(){
 
     const [ isMenuOpen, setMenuOpen] = useState(false);
@@ -31,8 +28,6 @@ function ContactHeader(){
     const closeMenu = () => {
         setMenuOpen(false);
     }
-
-  
     return(
         <div className="container">
         <Router> 

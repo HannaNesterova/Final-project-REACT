@@ -8,7 +8,6 @@ function CartItem({product}){
     const dispatch = useDispatch();
     const item = items.find(item => item.id === product.itemId);
 
-
    const handleRemoveItem = () => {
         dispatch(removeItemFromCart({ cartItemId: product.itemId }));
     };

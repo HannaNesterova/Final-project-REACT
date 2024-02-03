@@ -9,7 +9,7 @@ export const cartSlice = createSlice({
         addItemToCart:(state, action) => {
             state.cartItems.push({
                 itemId: action.payload.item.id,
-                quantity: action. payload.quantity,
+                quantity: action.payload.quantity,
                 price: action.payload.item.price,
                 totalPrice: (action.payload.item.price * action.payload.quantity)
             })

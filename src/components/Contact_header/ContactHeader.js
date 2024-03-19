@@ -18,6 +18,7 @@ import logo from '../../img/header/logo2.jpeg';
 import { useAuth0 } from "@auth0/auth0-react";
 import UserLoged from "../UserLoged/UserLoged";
 import { Puff } from 'react-loader-spinner';
+import ItemDetailsPage from "../Items/ItemDetailsPage";
 
 
 function ContactHeader(){
@@ -87,6 +88,7 @@ function ContactHeader(){
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path='/details/:id' element={<ItemDetailsPage />} />
         </Routes>
        </Router>
 

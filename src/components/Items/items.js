@@ -32,7 +32,7 @@ export const items = [
     {
         id:2,
         category:'Women',
-        title:'Instant Flex',
+        title:'Instant-Flex',
         price: 165,
         img:img2,
         img2:shoes,
@@ -44,7 +44,7 @@ export const items = [
     {
         id:3,
         category:'Men',
-        title:'Barefoot Shoe Company',
+        title:'Barefoot-Shoe-Company',
         price: 55,
         img:img3,
         img2:shoes,
@@ -55,7 +55,7 @@ export const items = [
     {
         id:4,
         category:'Men',
-        title:'Casual Shoes',
+        title:'Casual-Shoes',
         price: 55,
         img:img4,
         img2:shoes,
@@ -75,7 +75,7 @@ export const items = [
     {
         id:6,
         category:'Men',
-        title:'Crucial Footwear',
+        title:'Crucial-Footwear',
         price: 25,
         img:img6,
         span: 'Out of Stock',
@@ -96,7 +96,7 @@ export const items = [
     {
         id:8,
         category:'Men',
-        title:'Custom Sole Fitter',
+        title:'Custom-Sole-Fitter',
         price: 65,
         img:img8,
         spanOut:'Out of Stock',
@@ -107,7 +107,7 @@ export const items = [
     {
         id:10,
         category:'Men',
-        title:'Fit Any Foot',
+        title:'Fit-Any-Foot',
         price: 50,
         img:img10,
         img2:shoes,
@@ -117,7 +117,7 @@ export const items = [
     {
         id:9,
         category:'Men',
-        title:'The North Face',
+        title:'The-North-Face',
         price: 35,
         img:img9,
         img2:shoes,
@@ -127,7 +127,7 @@ export const items = [
     {
         id:11,
         category:'Women',
-        title:'All Star Footwear',
+        title:'All-Star-Footwear',
         price: 75,
         img:img11,
         img2:shoes,
@@ -137,7 +137,7 @@ export const items = [
     {
         id:12,
         category:'Women',
-        title:'Galaxy Surfer Slippers',
+        title:'Galaxy-Surfer-Slippers',
         price: 45,
         img:img12,
         img2:shoes,
@@ -147,7 +147,7 @@ export const items = [
     {
         id:13,
         category:'Women',
-        title:'Galaxy Surfer Slippers',
+        title:'Galaxy-Surfer-Slippers',
         price: 45,
         img:img13,
         spanSale: 'Sale',
@@ -158,7 +158,7 @@ export const items = [
     {
         id:14,
         category:'Men',
-        title:'Ikon Shoes',
+        title:'Ikon-Shoes',
         price: 75,
         img:img14,
         spanOut:'Out of Stock',
@@ -169,7 +169,7 @@ export const items = [
     {
         id:15,
         category:'Women',
-        title:'Adap Shoe',
+        title:'Adap-Shoe',
         price: 45,
         img:img15,
         img2:shoes,
@@ -179,7 +179,7 @@ export const items = [
     {
         id:16,
         category:'Men',
-        title:'Booties Shoes',
+        title:'Booties-Shoes',
         price: 55,
         img:img16,
         spanOut:'Out of Stock',

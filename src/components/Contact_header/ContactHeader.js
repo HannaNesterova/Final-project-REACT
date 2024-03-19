@@ -88,7 +88,7 @@ function ContactHeader(){
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path='/details/:id' element={<ItemDetailsPage />} />
+            <Route path='/details/:title' element={<ItemDetailsPage />} />
         </Routes>
        </Router>
 

@@ -11,6 +11,7 @@ function ItemsPage({items, setFilteredItems }) {
 
 const [ quantity ] = useState(1);
 const dispatch = useDispatch();
+
 const handleAddToCart = (item) => {
   dispatch(addItemToCart({ item, quantity }));
 };
@@ -28,10 +29,9 @@ const handleItem = (item) => {
                   const { id, category, title, price, img, spanSale, spanOut } = item;
                   return (
                     <div className='item-box' key={id}>
-                         <Link to={`/details/${id}`}>
-                          <button onClick={() => handleItem(item)}>more</button>
+                         <Link to={`/details/${item.title}`}>
+                          <button onClick={() => handleItem(item)} className="item-btn">more</button>
                        </Link>  
-                        {/* <button onClick={() => handleItem(item)}>more</button> */}
 
 
                       <img className="item-img" src={img} alt='foot' />

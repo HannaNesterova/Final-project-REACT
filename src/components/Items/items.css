@@ -140,3 +140,7 @@
 .description-header{
     text-align: center;
 }
+.description-main{
+    background-color:#7dd2ea;
+    padding: 50px 0px;
+}

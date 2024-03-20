@@ -4,7 +4,6 @@ import { addItemToCart } from '../../redux/cartSlice';
 import { useState } from 'react';
 import Buttons from '../Buttons/Buttons';
 import './items.css';
-import ItemDetailsPage from './ItemDetailsPage';
 
 
 function ItemsPage({items, setFilteredItems }) {
@@ -16,11 +15,11 @@ const handleAddToCart = (item) => {
   dispatch(addItemToCart({ item, quantity }));
 };
 
-const [selectedItem, setSelectedItem] = useState(null);
+// const [selectedItem, setSelectedItem] = useState(null);
 
-const handleItem = (item) => {
-  setSelectedItem(item);
-}
+// const handleItem = (item) => {
+//   setSelectedItem(item);
+// }
   return (
     <div className='back-items'>
       <Buttons setFilteredItems={setFilteredItems}/>
@@ -29,9 +28,10 @@ const handleItem = (item) => {
                   const { id, category, title, price, img, spanSale, spanOut } = item;
                   return (
                     <div className='item-box' key={id}>
-                         <Link to={`/details/${item.title}`}>
-                          <button onClick={() => handleItem(item)} className="item-btn">more</button>
-                       </Link>  
+                         <Link to={`/details/${item.title}`} handleAddToCart={handleAddToCart}>more </Link>  
+                           {/* <button onClick={() => handleItem(item)} className="item-btn">more</button> 
+                           */}
+                     
 
 
                       <img className="item-img" src={img} alt='foot' />
@@ -49,7 +49,7 @@ const handleItem = (item) => {
                 })
               }
       </div>
-       {selectedItem && <ItemDetailsPage selectedItem={selectedItem} handleAddToCart={handleAddToCart} />}
+       {/* {selectedItem && <ItemDetailsPage selectedItem={selectedItem} handleAddToCart={handleAddToCart} />} */}
         </div>
     );
 }

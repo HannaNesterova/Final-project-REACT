@@ -1,11 +1,11 @@
 
 import ItemDetails from './ItemDetails';
 
-function ItemDetailsPage({ selectedItem , handleAddToCart}) {
+function ItemDetailsPage({ handleAddToCart}) {
 
     return (
         <div>
-            <ItemDetails selectedItem={selectedItem}  handleAddToCart={ handleAddToCart} />
+            <ItemDetails  handleAddToCart={ handleAddToCart} />
         </div>
     );
 }

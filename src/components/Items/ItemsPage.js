@@ -15,11 +15,6 @@ const handleAddToCart = (item) => {
   dispatch(addItemToCart({ item, quantity }));
 };
 
-// const [selectedItem, setSelectedItem] = useState(null);
-
-// const handleItem = (item) => {
-//   setSelectedItem(item);
-// }
   return (
     <div className='back-items'>
       <Buttons setFilteredItems={setFilteredItems}/>
@@ -28,12 +23,7 @@ const handleAddToCart = (item) => {
                   const { id, category, title, price, img, spanSale, spanOut } = item;
                   return (
                     <div className='item-box' key={id}>
-                         <Link to={`/details/${item.title}`} handleAddToCart={handleAddToCart}>more </Link>  
-                           {/* <button onClick={() => handleItem(item)} className="item-btn">more</button> 
-                           */}
-                     
-
-
+                         <Link to={`/details/${item.title}`}>more </Link>  
                       <img className="item-img" src={img} alt='foot' />
                       <div className='top-sale'>
                         <span className="item-top">TOP</span>
@@ -49,7 +39,6 @@ const handleAddToCart = (item) => {
                 })
               }
       </div>
-       {/* {selectedItem && <ItemDetailsPage selectedItem={selectedItem} handleAddToCart={handleAddToCart} />} */}
         </div>
     );
 }

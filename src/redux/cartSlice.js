@@ -1,18 +1,38 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const loadCartFromLocalStorage = () => {
+    try {
+        const cartItems = localStorage.getItem('cartItems');
+        if (cartItems) {
+            return JSON.parse(cartItems);
+        }
+    } catch (error) {
+        console.error('Error loading cart from localStorage:', error);
+    }
+    return [];
+};
+
 export const cartSlice = createSlice({
     name:'cart',
     initialState:{
-        cartItems:[]
+        cartItems: loadCartFromLocalStorage() 
     },
     reducers:{
-        addItemToCart:(state, action) => {
-            state.cartItems.push({
-                itemId: action.payload.item.id,
-                quantity: action.payload.quantity,
-                price: action.payload.item.price,
-                totalPrice: (action.payload.item.price * action.payload.quantity)
-            })
+        addItemToCart: (state, action) => {
+            const { item, quantity } = action.payload;
+            const existingItem = state.cartItems.find(cartItem => cartItem.itemId === item.id);
+            if (existingItem) {
+                existingItem.quantity += quantity;
+                existingItem.totalPrice = existingItem.quantity * existingItem.price;
+            } else {
+                state.cartItems.push({
+                    itemId: item.id,
+                    quantity: quantity,
+                    price: item.price,
+                    totalPrice: item.price * quantity
+                });
+            }
+            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
         },
         removeItemFromCart:(state, action) => {
           state.cartItems = state.cartItems.filter(

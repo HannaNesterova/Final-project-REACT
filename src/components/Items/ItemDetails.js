@@ -11,17 +11,16 @@ import { useState } from 'react';
 
 
 
-function ItemDetails({ handleAddToCart}){
+function ItemDetails({ title}){
 
-    // const [ quantity ] = useState(1);
-    // const dispatch = useDispatch();
+    const [ quantity ] = useState(1);
+    const dispatch = useDispatch();
 
     const navigate = useNavigate();
-    const {title} = useParams();
 
-    // const handleAddToCart = (item) => {
-    //     dispatch(addItemToCart({ item, quantity }));
-    //   };
+     const handleAddToCart = (item) => {
+         dispatch(addItemToCart({ item, quantity }));
+    };
 
     const settings = {
         dots: true,

@@ -1,4 +1,3 @@
-import UserLoged from '../UserLoged/UserLoged';
 import './styleLogin.css';
 import { useAuth0 } from "@auth0/auth0-react";
 

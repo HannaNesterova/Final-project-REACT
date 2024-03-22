@@ -2,7 +2,7 @@ import FirstImg from '../header/01car.jpeg';
 import SecondImg from '../header/02car.jpeg';
 import ThreeImg from '../header/03car.jpeg';
 
-// eslint-disable-next-line import/no-anonymous-default-export
+
 export default [
     {
     urls:FirstImg,

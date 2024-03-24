@@ -3,7 +3,7 @@ import SecondImg from '../header/02car.jpeg';
 import ThreeImg from '../header/03car.jpeg';
 
 
-const imageSlider = [
+const imageSlider =  [
     {
     urls:FirstImg,
     title: 'First Slider Image',

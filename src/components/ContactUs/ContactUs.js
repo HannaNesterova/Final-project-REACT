@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import 'aos/dist/aos.css';
 import '../ContactUs/contactUs.css'
@@ -7,6 +7,7 @@ import '../ContactUs/contactUs.css'
 function ContactUs(){
 
     const form = useRef();
+    const [message, setMessage] = useState('');
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -20,6 +21,8 @@ function ContactUs(){
         .then(
           () => {
             console.log('SUCCESS!');
+            setMessage('Ваше сообщение отправлено');
+            form.current.reset();
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -40,6 +43,7 @@ function ContactUs(){
                     <textarea name="message" required/>
                     <input type="submit" value="Send" className='sbm-send'/>
                  </form>
+                 {message && <p>{message}</p>}
                 </div>
 
 

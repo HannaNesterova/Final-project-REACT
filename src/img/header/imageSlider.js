@@ -3,7 +3,7 @@ import SecondImg from '../header/02car.jpeg';
 import ThreeImg from '../header/03car.jpeg';
 
 
-export default [
+const imageSlider = [
     {
     urls:FirstImg,
     title: 'First Slider Image',
@@ -24,5 +24,6 @@ export default [
     description:'Can`t miss Nike!',
     prise:'starting at 60% off',
     button:'DISCOVER NOW'
-},
+}
 ]
+export default imageSlider;

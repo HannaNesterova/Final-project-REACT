@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';

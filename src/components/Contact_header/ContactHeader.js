@@ -19,6 +19,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import UserLoged from "../UserLoged/UserLoged";
 import { Puff } from 'react-loader-spinner';
 import ItemDetailsPage from "../Items/ItemDetailsPage";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 
 function ContactHeader(){
@@ -50,6 +51,7 @@ function ContactHeader(){
     return(
         <div className="container">
         <Router> 
+            <ScrollToTop />
             <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`}>
             <div  id="menuToggle" className="burger-icon" onClick={toggleMenu}>
             <span></span>

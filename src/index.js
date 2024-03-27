@@ -8,8 +8,8 @@ import { store } from './redux/store';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-console.log('Domain:', process.env.REACT_APP_AUTH0_DOMAIN);
-console.log('Client ID:', process.env.REACT_APP_AUTH0_CLIENT_ID);
+console.log('Domain:', 'dev-dseqq7ugiytcafqw.us.auth0.com');
+console.log('Client ID:', 'YUu6PdSLaSVszEi2ehHxZyUN8EFFllP1');
 root.render(
   
   <React.StrictMode>

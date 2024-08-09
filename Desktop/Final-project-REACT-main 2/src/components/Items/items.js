@@ -14,6 +14,8 @@ import img13 from '../../img/foots/13.jpg';
 import img14 from '../../img/foots/14jpg.jpeg';
 import img15 from '../../img/foots/15.jpg';
 import img16 from '../../img/foots/16.jpg';
+import shoes from '../../img/foots/shoes.jpeg';
+import shoes1 from '../../img/foots/shoes1.jpeg';
 
 export const items = [
     {
@@ -22,119 +24,168 @@ export const items = [
         title:'Designer',
         price: 50,
         img:img1,
-        spanSale:'Sale'
+        img2:shoes,
+        img3:shoes1,
+        spanSale:'Sale',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:2,
         category:'Women',
-        title:'Instant Flex',
+        title:'Instant-Flex',
         price: 165,
         img:img2,
-        spanOut:'Out of Stock'
+        img2:shoes,
+        img3:shoes1,
+        spanOut:'Out of Stock',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+
     },
     {
         id:3,
         category:'Men',
-        title:'Barefoot Shoe Company',
+        title:'Barefoot-Shoe-Company',
         price: 55,
         img:img3,
-        spanSale: 'Sale'
+        img2:shoes,
+        img3:shoes1,
+        spanSale: 'Sale',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:4,
         category:'Men',
-        title:'Casual Shoes',
+        title:'Casual-Shoes',
         price: 55,
-        img:img4
+        img:img4,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:5,
         category:'Women',
         title:'Fitsixes',
         price: 65,
-        img:img5
+        img:img5,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:6,
         category:'Men',
-        title:'Crucial Footwear',
+        title:'Crucial-Footwear',
         price: 25,
         img:img6,
-        span: 'Out of Stock'
+        span: 'Out of Stock',
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:7,
         category:'Women',
         title:'The South Face',
         price: 45,
-        img:img7
+        img:img7,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:8,
         category:'Men',
-        title:'Custom Sole Fitter',
+        title:'Custom-Sole-Fitter',
         price: 65,
         img:img8,
-        spanOut:'Out of Stock'
+        spanOut:'Out of Stock',
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:10,
         category:'Men',
-        title:'Fit Any Foot',
+        title:'Fit-Any-Foot',
         price: 50,
-        img:img10
+        img:img10,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:9,
         category:'Men',
-        title:'The North Face',
+        title:'The-North-Face',
         price: 35,
-        img:img9
+        img:img9,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:11,
         category:'Women',
-        title:'All Star Footwear',
+        title:'All-Star-Footwear',
         price: 75,
-        img:img11
+        img:img11,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:12,
         category:'Women',
-        title:'Galaxy Surfer Slippers',
+        title:'Galaxy-Surfer-Slippers',
         price: 45,
-        img:img12
+        img:img12,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:13,
         category:'Women',
-        title:'Galaxy Surfer Slippers',
+        title:'Galaxy-Surfer-Slippers',
         price: 45,
         img:img13,
-        spanSale: 'Sale'
+        spanSale: 'Sale',
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:14,
         category:'Men',
-        title:'Ikon Shoes',
+        title:'Ikon-Shoes',
         price: 75,
         img:img14,
-        spanOut:'Out of Stock'
+        spanOut:'Out of Stock',
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:15,
         category:'Women',
-        title:'Adap Shoe',
+        title:'Adap-Shoe',
         price: 45,
-        img:img15
+        img:img15,
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
     {
         id:16,
         category:'Men',
-        title:'Booties Shoes',
+        title:'Booties-Shoes',
         price: 55,
         img:img16,
-        spanOut:'Out of Stock'
+        spanOut:'Out of Stock',
+        img2:shoes,
+        img3:shoes1,
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
     },
 ]
 

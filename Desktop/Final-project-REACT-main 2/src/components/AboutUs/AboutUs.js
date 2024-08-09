@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Header from '../Header/Header';
 import './styleAboutUs.css';
 import ContactImg from '../../img/about_us/aboutUs.webp';
 import Accordion from 'react-bootstrap/Accordion';
@@ -18,7 +17,6 @@ function AboutUs(){
 
     return(
         <div className='container'>
-            <Header />
             <h2 className='title-about'> Let's get acquainted</h2>
         <div data-aos="fade-up" data-aos-duration="3000" className='aboutUs-container'>
             <img src={ContactImg} alt='img' className='error_img'/>

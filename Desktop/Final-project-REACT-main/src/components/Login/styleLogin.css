@@ -1,0 +1,16 @@
+.btn-login{
+    margin: 14px;
+    color: rgb(68, 95, 132);
+    text-decoration: none;
+    font-weight: 500;
+    width: 130px;
+    border: none;
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0);
+   }
+   .btn-login:hover{
+     border: none;
+   }

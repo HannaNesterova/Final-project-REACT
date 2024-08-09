@@ -1,0 +1,40 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px ;
+
+}
+.app_wrapper{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 0px 30px;
+position: relative;
+} 
+
+
+@media all and (max-width:900px){
+  .main_containerFooter{
+    flex-wrap: wrap;
+  }
+  .app_wrapper{
+    height: fit-content;
+    margin: 0px 50px;
+  }
+  .main_containerFooter p{
+    font-size: 18px;
+  }
+}
+@media all and (max-width:560px){
+  .app_wrapper{
+    margin: 0px 5px;
+  }
+  .slide-description {
+    font-size: 30px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  .main_containerFooter{
+    justify-content: flex-start
+  }
+}

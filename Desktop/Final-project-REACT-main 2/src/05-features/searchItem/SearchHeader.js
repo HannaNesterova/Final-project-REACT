@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./styleHeader.css";
-import { items } from "../../shared/data/items";
+import { items } from "../../07-shared/data/items";
 
 function SearchHeader({ setFilteredItems }) {
   const [valueOfItem, setValueOfItem] = useState("");

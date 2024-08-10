@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import ItemDetails from "../../entities/ui/ItemDetails";
+import ItemDetails from "../../06-entities/ui/ItemDetails";
 
 function ItemDetailsPage() {
   const { title } = useParams();

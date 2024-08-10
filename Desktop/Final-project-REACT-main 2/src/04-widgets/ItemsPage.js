@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addItemToCart } from "../../app/providers/redux/cartSlice";
+import { addItemToCart } from "../../01-app/providers/redux/cartSlice";
 import { useState } from "react";
 import Buttons from "../Buttons/Buttons";
 import "./items.css";

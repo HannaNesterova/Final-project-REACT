@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { getCartItems } from "../../app/providers/redux/cartSlice";
+import { getCartItems } from "../providers/redux/cartSlice";
 
 import "./styleContactHeader.css";
-import AboutUs from "../../pages/aboutUs/AboutUs";
-import Login from "../../processes/auth/Login/Login";
-import Main from "../../pages/home-page/Main";
+import AboutUs from "../../03-pages/aboutUs/AboutUs";
+import Login from "../../02-processes/auth/Login/Login";
+import Main from "../../03-pages/home-page/Main";
 import Cart from "../Cart/Cart";
 import logo from "../../img/header/logo2.jpeg";
 import { useAuth0 } from "@auth0/auth0-react";
-import UserLoged from "../../processes/auth/UserLoged/UserLoged";
+import UserLoged from "../../02-processes/auth/UserLoged/UserLoged";
 import { Puff } from "react-loader-spinner";
-import ItemDetailsPage from "../../pages/itemDetailPage/ItemDetailsPage";
-import ScrollToTop from "../../shared/ScrollToTop/ScrollToTop";
-import Contacts from "../../pages/contacts/Contacts";
+import ItemDetailsPage from "../../03-pages/itemDetailPage/ItemDetailsPage";
+import ScrollToTop from "../../07-shared/ScrollToTop/ScrollToTop";
+import Contacts from "../../03-pages/contacts/Contacts";
 
 function ContactHeader() {
   const [isMenuOpen, setMenuOpen] = useState(false);

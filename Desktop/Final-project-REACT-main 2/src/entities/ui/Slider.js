@@ -1,8 +1,8 @@
-import SliderContent from "./SliderContent";
+import SliderContent from "../../pages/slider/SliderContent";
 import imageSlider from "../../img/header/imageSlider";
-import Arrows from "./Arrows";
+import Arrows from "../../components/Header/Arrows";
 import { useEffect, useState } from "react";
-import Dots from "./Dots";
+import Dots from "../../components/Header/Dots";
 import "./slider.css";
 
 function Slider() {

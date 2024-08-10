@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { getCartItems } from "../../redux/cartSlice";
+import { getCartItems } from "../../app/providers/redux/cartSlice";
 
 import "./styleContactHeader.css";
-import AboutUs from "../AboutUs/AboutUs";
-import Login from "../Login/Login";
-import Main from "../Main/Main";
+import AboutUs from "../../pages/aboutUs/AboutUs";
+import Login from "../../processes/auth/Login/Login";
+import Main from "../../pages/home-page/Main";
 import Cart from "../Cart/Cart";
 import logo from "../../img/header/logo2.jpeg";
 import { useAuth0 } from "@auth0/auth0-react";
-import UserLoged from "../UserLoged/UserLoged";
+import UserLoged from "../../processes/auth/UserLoged/UserLoged";
 import { Puff } from "react-loader-spinner";
-import ItemDetailsPage from "../Items/ItemDetailsPage";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
-import Contacts from "../ContactUs/Contacts";
+import ItemDetailsPage from "../../pages/itemDetailPage/ItemDetailsPage";
+import ScrollToTop from "../../shared/ScrollToTop/ScrollToTop";
+import Contacts from "../../pages/contacts/Contacts";
 
 function ContactHeader() {
   const [isMenuOpen, setMenuOpen] = useState(false);

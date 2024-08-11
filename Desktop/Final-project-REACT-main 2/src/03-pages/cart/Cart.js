@@ -1,5 +1,5 @@
-import CartItem from "./CartItem";
-import "./cartStyles.css";
+import CartItem from "../../06-entities/ui/CartItem";
+import "../../06-entities/ui/cartStyles.css";
 import { useSelector } from "react-redux";
 import {
   getCartItems,

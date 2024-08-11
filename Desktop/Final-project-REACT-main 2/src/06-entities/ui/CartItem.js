@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import ChangeQuantity from "./ChangeQuantity";
+import ChangeQuantity from "../../05-features/itemQuantity/ChangeQuantity";
 import "./cartStyles.css";
-import { items } from "../../shared/data/items";
-import { removeItemFromCart } from "../../redux/cartSlice";
+import { items } from "../../07-shared/data/items";
+import { removeItemFromCart } from "../../01-app/providers/redux/cartSlice";
 
 function CartItem({ product }) {
   const dispatch = useDispatch();

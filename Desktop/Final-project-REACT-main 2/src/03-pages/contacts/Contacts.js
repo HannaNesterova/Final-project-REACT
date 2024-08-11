@@ -1,4 +1,4 @@
-import ContactUs from "../../features/contactUs/ContactUs";
+import ContactUs from "../../05-features/contactUs/ContactUs";
 
 function Contacts() {
   return (

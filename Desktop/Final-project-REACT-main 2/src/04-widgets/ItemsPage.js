@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addItemToCart } from "../../01-app/providers/redux/cartSlice";
+import { addItemToCart } from "../01-app/providers/redux/cartSlice";
 import { useState } from "react";
-import Buttons from "../Buttons/Buttons";
+import Buttons from "../07-shared/Buttons/Buttons";
 import "./items.css";
 
 function ItemsPage({ items, setFilteredItems }) {

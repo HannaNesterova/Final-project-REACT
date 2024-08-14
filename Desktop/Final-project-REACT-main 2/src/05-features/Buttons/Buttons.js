@@ -1,4 +1,4 @@
-import { items } from "../../07-shared/data/items";
+import { items } from "./data/items";
 
 function Buttons({ setFilteredItems }) {
   const filterItems = (category) => {

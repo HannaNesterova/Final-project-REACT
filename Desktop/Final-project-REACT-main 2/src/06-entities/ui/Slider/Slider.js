@@ -1,5 +1,5 @@
-import SliderContent from "../../03-pages/slider/SliderContent";
-import imageSlider from "../../07-shared/assets/img/header/imageSlider";
+import SliderContent from "../slider/SliderContent";
+import imageSlider from "./imageSlider";
 import Arrows from "../../07-shared/slider-buttons/Arrows";
 import { useEffect, useState } from "react";
 import Dots from "../../07-shared/slider-buttons/Dots";

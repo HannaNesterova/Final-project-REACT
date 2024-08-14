@@ -3,9 +3,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../04-widgets/items.css";
-import { items } from "../../07-shared/data/items";
-import { addItemToCart } from "../../01-app/providers/redux/cartSlice";
+import "../../../06-entities/ui/ItemPage/items.css";
+import { items } from "../../data/items";
+import { addItemToCart } from "../../../01-app/providers/redux/cartSlice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 

@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState } from "react";
-import { items } from "../../07-shared/data/items";
-import ItemsPage from "../../04-widgets/ItemsPage";
+import { items } from "../../03-pages/home-page/data/items";
+import ItemsPage from "../../06-entities/ui/ItemPage/ItemsPage";
 
 import SearchHeader from "../../05-features/searchItem/SearchHeader";
-import Slider from "../../06-entities/ui/Slider";
+import Slider from "../../06-entities/ui/Slider/SliderContent";
 import firstPic from "../../07-shared/assets/img/main_page_img/01.jpeg";
 import secondPic from "../../07-shared/assets/img/main_page_img/02.jpeg";
 import thirdPic from "../../07-shared/assets/img/main_page_img/03.jpeg";

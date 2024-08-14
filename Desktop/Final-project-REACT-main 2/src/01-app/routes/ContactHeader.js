@@ -5,12 +5,12 @@ import { getCartItems } from "../providers/redux/cartSlice";
 
 import "./styleContactHeader.css";
 import AboutUs from "../../03-pages/aboutUs/AboutUs";
-import Login from "../../02-processes/auth/Login/Login";
+import Login from "../../05-features/Login/Login";
 import Main from "../../03-pages/home-page/Main";
 import Cart from "../../03-pages/cart/Cart";
 import logo from "../../07-shared/assets/img/header/logo2.jpeg";
 import { useAuth0 } from "@auth0/auth0-react";
-import UserLoged from "../../02-processes/auth/UserLoged/UserLoged";
+import UserLoged from "../../05-features/auth/UserLoged/UserLoged";
 import { Puff } from "react-loader-spinner";
 import ItemDetailsPage from "../../03-pages/itemDetailPage/ItemDetailsPage";
 import ScrollToTop from "../../07-shared/ScrollToTop/ScrollToTop";

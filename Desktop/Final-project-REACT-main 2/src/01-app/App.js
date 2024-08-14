@@ -1,6 +1,6 @@
 import "./App.css";
 import ContactHeader from "../01-app/routes/ContactHeader";
-import Footer from "../03-pages/footer/Footer";
+import Footer from "../04-widgets/footer/Footer";
 
 function App() {
   return (
